@@ -92,3 +92,11 @@
 2025-01-30 14:46:27.958 | INFO     | __main__:write_txt_file:60 - Writing data to data\Shakespere.txt...
 2025-01-30 14:46:27.958 | INFO     | __main__:write_txt_file:64 - SUCCESS: Data written to data\Shakespere.txt
 2025-01-30 14:46:27.958 | INFO     | __main__:fetch_txt_file:40 - SUCCESS: Text file fetched and saved as Shakespere.txt
+2025-01-30 14:57:24.380 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-30 14:57:24.380 | INFO     | __main__:<module>:66 - Starting CSV processing...
+2025-01-30 14:57:24.383 | INFO     | __main__:process_csv_file:61 - Processed CSV file: data\Obesity.csv, Statistics saved to: data_processed\obesity_stats.txt
+2025-01-30 14:57:24.383 | INFO     | __main__:<module>:68 - CSV processing complete.
+2025-01-30 15:15:06.161 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-30 15:15:06.161 | INFO     | __main__:<module>:36 - Starting text processing...
+2025-01-30 15:15:06.161 | INFO     | __main__:process_text_file:33 - Processed text file: data\Shakespere.txt, Word count saved to: data_processed\SAMPSON.txt
+2025-01-30 15:15:06.161 | INFO     | __main__:<module>:38 - Text processing complete.

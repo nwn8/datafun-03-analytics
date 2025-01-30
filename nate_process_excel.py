@@ -3,29 +3,14 @@ Process an Excel file to count occurrences of a specific word in a column.
 
 """
 
-#####################################
-# Import Modules
-#####################################
-
-# Import from Python Standard Library
 import pathlib
-
-# Import from external packages
 import openpyxl
-
-# Import from local project modules
 from utils_logger import logger
 
-#####################################
-# Declare Global Variables
-#####################################
+fetched_folder_name: str = "data"
+processed_folder_name: str = "data_processed"
 
-fetched_folder_name: str = "example_data"
-processed_folder_name: str = "example_processed"
 
-#####################################
-# Define Functions
-#####################################
 
 def count_word_in_column(file_path: pathlib.Path, column_letter: str, word: str) -> int:
     """Count the occurrences of a specific word in a given column of an Excel file."""
