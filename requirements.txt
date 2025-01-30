@@ -1,0 +1,14 @@
+# Up-to-date package management tools
+pip
+
+# Easy logging for monitoring code execution
+loguru
+
+# Making web requests
+requests
+
+# ======================================================
+# ESSENTIAL TOOLS
+# ======================================================
+# Easy access to modern Excel files (*.xlsx)
+openpyxl
