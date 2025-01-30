@@ -1,25 +1,17 @@
 """
-Process a CSV file on 2020 Happiness ratings by country to analyze the `Ladder score` column and save statistics.
+Process a CSV file on Obesity ratings  to analyze column and save statistics.
 """
 
-#####################################
-# Import Modules
-#####################################
 
-# Import from Python Standard Library
 import pathlib
 import csv
 import statistics
-
-# Import from local project modules
 from utils_logger import logger
 
-#####################################
-# Declare Global Variables
-#####################################
 
-fetched_folder_name: str = "example_data"
-processed_folder_name: str = "example_processed"
+
+fetched_folder_name: str = "data"
+processed_folder_name: str = "data_processed"
 
 #####################################
 # Define Functions

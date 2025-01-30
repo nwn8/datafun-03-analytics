@@ -1,33 +1,16 @@
 """
 This example file fetches an Excel file from the web 
-and saves it to a local file named feedback.xlsx in a folder named example_data.
-
-Please save a copy of the provided utils_logger.py file 
-in the same folder as this file.
+and saves it to a local file named annualfoodimports.xlsx in a folder named data.
 """
 
-#####################################
-# Import Modules at the Top
-#####################################
-
-# Import from Python Standard Library
 import pathlib
-
-# Import from external packages
 import requests
-
-# Import from local project modules
 from utils_logger import logger
 
-#####################################
-# Declare Global Variables
-#####################################
 
-fetched_folder_name = "example_data"
+fetched_folder_name = "data"
 
-#####################################
-# Define Functions
-#####################################
+
 
 def fetch_excel_file(folder_name: str, filename: str, url: str) -> None:
     """
@@ -81,23 +64,16 @@ def write_excel_file(folder_name: str, filename: str, binary_data: bytes) -> Non
     except IOError as io_err:
         logger.error(f"Error writing Excel data to {file_path}: {io_err}")
 
-#####################################
-# Define main() function
-#####################################
 
 def main():
     """
     Main function to demonstrate fetching Excel data.
     """
-    excel_url = 'https://raw.githubusercontent.com/denisecase/datafun-03-analytics/main/hosted/Feedback.xlsx'
+    excel_url = 'https://ers.usda.gov/sites/default/files/_laserfiche/DataFiles/53736/FoodImports.xlsx?v=31915'
     logger.info("Starting Excel fetch demonstration...")
-    fetch_excel_file(fetched_folder_name, "feedback.xlsx", excel_url)
+    fetch_excel_file(fetched_folder_name, "AnnualFoodImports.xlsx", excel_url)
 
-#####################################
-# Conditional Execution
-#####################################
+
 
 if __name__ == '__main__':
     main()
-
-# TODO: Run this script to ensure all functions work as intended.

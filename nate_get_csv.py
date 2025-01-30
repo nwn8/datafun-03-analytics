@@ -1,25 +1,17 @@
 """
 This file fetches a CSV file from the web 
-and saves it to a local file named natesdata.csv in a folder named example_data.
-
+and saves it to a local file named obesity.csv in a folder named data.
 
 """
 
 import pathlib
-
 import requests
-
 from utils_logger import logger
 
-#####################################
-# Declare Global Variables
-#####################################
 
 fetched_folder_name = "data"
 
-#####################################
-# Define Functions
-#####################################
+
 
 def fetch_csv_file(folder_name: str, filename: str, url: str) -> None:
     """
@@ -73,9 +65,7 @@ def write_csv_file(folder_name: str, filename: str, string_data: str) -> None:
     except IOError as io_err:
         logger.error(f"Error writing CSV data to {file_path}: {io_err}")
 
-#####################################
-# Define main() function
-#####################################
+
 
 def main():
 
@@ -83,9 +73,6 @@ def main():
     logger.info("Starting CSV fetch...")
     fetch_csv_file(fetched_folder_name, "Obesity.csv", csv_url)
 
-#####################################
-# Conditional Execution
-#####################################
 
 if __name__ == '__main__':
     main()

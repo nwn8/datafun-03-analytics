@@ -1,32 +1,16 @@
 """
 This file fetches JSON data 
-from the web and saves it to a local file named example_data/astronauts.json.
+from the web and saves it to a local file named data/astronauts.json.
 
 """
 
-#####################################
-# Import Modules at the Top
-#####################################
 
-# Import from Python Standard Library
 import json
 import pathlib
-
-# Import from external packages
 import requests
-
-# Import from local project modules
 from utils_logger import logger
 
-#####################################
-# Declare Global Variables
-#####################################
-
-fetched_folder_name = "example_data"
-
-#####################################
-# Define Functions
-#####################################
+fetched_folder_name = "data"
 
 def fetch_json_file(folder_name: str, filename: str, url: str) -> None:
     """
@@ -80,23 +64,16 @@ def write_json_file(folder_name: str, filename: str, json_data: dict) -> None:
     except IOError as io_err:
         logger.error(f"Error writing JSON data to {file_path}: {io_err}")
 
-#####################################
-# Define main() function
-#####################################
 
 def main():
     """
     Main function to demonstrate fetching JSON data.
     """
-    json_url = 'http://api.open-notify.org/astros.json'
+    json_url = 'https://datausa.io/api/data?drilldowns=Nation&measures=Population'
     logger.info("Starting JSON fetch demonstration...")
-    fetch_json_file(fetched_folder_name, "astros.json", json_url)
+    fetch_json_file(fetched_folder_name, "population.json", json_url)
 
-#####################################
-# Conditional Execution
-#####################################
+
 
 if __name__ == '__main__':
     main()
-
-# TODO: Run this script to ensure all functions work as intended.

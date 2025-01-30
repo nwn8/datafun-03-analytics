@@ -1,33 +1,17 @@
 """
-This example file fetches a text file of Romeo and Juliet from the web 
-and saves it to a local file named romeo.txt in a folder named example_data.
+This example file fetches web 
+and saves it to a local file named Shakespere.txt in a folder named data.
 
-Please save a copy of the provided utils_logger.py file 
-in the same folder as this file.
+I don't know where to find a .txt file online so I'm using the one provided in the example
+
 """
 
-#####################################
-# Import Modules at the Top
-#####################################
-
-# Import from Python Standard Library
 import pathlib
-
-# Import from external packages
 import requests
-
-# Import from local project modules
 from utils_logger import logger
 
-#####################################
-# Declare Global Variables
-#####################################
 
-fetched_folder_name = "example_data"
-
-#####################################
-# Define Functions
-#####################################
+fetched_folder_name = "data"
 
 def fetch_txt_file(folder_name: str, filename: str, url: str) -> None:
     """
@@ -81,9 +65,7 @@ def write_txt_file(folder_name: str, filename: str, string_data: str) -> None:
     except IOError as io_err:
         logger.error(f"Error writing to file {file_path}: {io_err}")
 
-#####################################
-# Define main() function
-#####################################
+
 
 def main():
     """
@@ -91,13 +73,9 @@ def main():
     """
     txt_url = 'https://raw.githubusercontent.com/denisecase/datafun-03-analytics/main/hosted/romeo.txt'
     logger.info("Starting text fetch demonstration...")
-    fetch_txt_file(fetched_folder_name, "romeo.txt", txt_url)
+    fetch_txt_file(fetched_folder_name, "Shakespere.txt", txt_url)
 
-#####################################
-# Conditional Execution
-#####################################
+
 
 if __name__ == '__main__':
     main()
-
-# TODO: Run this as a script to test that all functions work as intended.
