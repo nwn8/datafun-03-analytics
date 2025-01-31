@@ -6,41 +6,52 @@ Process an Excel file to count occurrences of a specific word in a column.
 import pathlib
 import openpyxl
 from utils_logger import logger
+import xlwings as xw
+import pandas as pd
+import statistics
 
 fetched_folder_name: str = "data"
 processed_folder_name: str = "data_processed"
 
+Workbook=r"data/AnnualFoodImports.xlsx"
+Sheet='Coffee'
 
-
-def count_word_in_column(file_path: pathlib.Path, column_letter: str, word: str) -> int:
-    """Count the occurrences of a specific word in a given column of an Excel file."""
+def get_coffee_data_from_excel() -> dict:
+    """this will open the data/AnnualFoodImports.xlsx sheet=Coffee and get specific coffee import data """
     try:
-        workbook = openpyxl.load_workbook(file_path)
-        sheet = workbook.active
-        count = 0
-        for cell in sheet[column_letter]:
-            if cell.value and isinstance(cell.value, str):
-                count += cell.value.lower().count(word.lower())
-        return count
+        data=pd.read_excel(Workbook,sheet_name=Sheet, usecols="C,E", skiprows=15, nrows=7, header=None)
+        data_list = data[4].to_list()
+        stats = {
+            "min": min(data_list),
+            "max": max(data_list),
+            "mean": statistics.mean(data_list),
+            "stdev": statistics.stdev(data_list) if len(data_list) > 1 else 0,
+        }
+        return stats
+        
     except Exception as e:
         logger.error(f"Error reading Excel file: {e}")
         return 0
 
 def process_excel_file():
-    """Read an Excel file, count occurrences of 'GitHub' in a specific column, and save the result."""
-    input_file = pathlib.Path(fetched_folder_name, "feedback.xlsx")
-    output_file = pathlib.Path(processed_folder_name, "excel_feedback_github_count.txt")
-    column_to_check = "A"  # Replace with the appropriate column letter
-    word_to_count = "GitHub"
-    word_count = count_word_in_column(input_file, column_to_check, word_to_count)
-    output_file.parent.mkdir(parents=True, exist_ok=True)
-    with output_file.open('w') as file:
-        file.write(f"Occurrences of '{word_to_count}' in column {column_to_check}: {word_count}\n")
-    logger.info(f"Processed Excel file: {input_file}, Word count saved to: {output_file}")
+    """this will write the statics data to data_processed/Coffee_imports_results.txt"""
 
-#####################################
-# Main Execution
-#####################################
+    input_file = pathlib.Path(fetched_folder_name, "AnnualFoodImports.xlsx")
+    output_file = pathlib.Path(processed_folder_name, "Coffee_imports_results.txt")
+
+    data= get_coffee_data_from_excel()
+
+    with output_file.open('w') as file:
+        file.write("2023 Coffee imports millions of dollars Statistics:\n")
+        file.write(f"Minimum: {data['min']:.2f}\n")
+        file.write(f"Maximum: {data['max']:.2f}\n")
+        file.write(f"Mean: {data['mean']:.2f}\n")
+        file.write(f"Standard Deviation: {data['stdev']:.2f}\n")
+    
+    logger.info(f"Processed Excel file: {input_file}, Results saved to: {output_file}")
+
+
+ 
 
 if __name__ == "__main__":
     logger.info("Starting Excel processing...")

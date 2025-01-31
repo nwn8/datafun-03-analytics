@@ -1,5 +1,5 @@
 """
-Process a JSON file to count 
+Process a JSON file to get population data statistics
   
 
 """

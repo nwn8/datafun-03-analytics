@@ -12,3 +12,8 @@ requests
 # ======================================================
 # Easy access to modern Excel files (*.xlsx)
 openpyxl
+
+
+xlwings
+
+pandas

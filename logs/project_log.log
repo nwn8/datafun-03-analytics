@@ -148,3 +148,36 @@
 2025-01-31 08:29:25.752 | INFO     | __main__:<module>:71 - Starting JSON processing...
 2025-01-31 08:29:25.752 | INFO     | __main__:process_json_file:66 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
 2025-01-31 08:29:25.752 | INFO     | __main__:<module>:73 - JSON processing complete.
+2025-01-31 09:05:26.940 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:05:27.666 | INFO     | __main__:<module>:43 - Starting Excel processing...
+2025-01-31 09:05:27.728 | INFO     | __main__:<module>:45 - Excel processing complete.
+2025-01-31 09:07:19.463 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:07:20.218 | INFO     | __main__:<module>:43 - Starting Excel processing...
+2025-01-31 09:07:20.277 | INFO     | __main__:<module>:45 - Excel processing complete.
+2025-01-31 09:10:11.470 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:10:12.207 | INFO     | __main__:<module>:43 - Starting Excel processing...
+2025-01-31 09:10:12.263 | INFO     | __main__:<module>:45 - Excel processing complete.
+2025-01-31 09:10:31.169 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:10:31.936 | INFO     | __main__:<module>:43 - Starting Excel processing...
+2025-01-31 09:10:31.997 | INFO     | __main__:<module>:45 - Excel processing complete.
+2025-01-31 09:25:25.992 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:25:26.747 | INFO     | __main__:<module>:54 - Starting Excel processing...
+2025-01-31 09:25:26.803 | ERROR    | __main__:get_coffee_data_from_excel:33 - Error reading Excel file: '4'
+2025-01-31 09:25:26.803 | INFO     | __main__:<module>:56 - Excel processing complete.
+2025-01-31 09:25:50.445 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:25:51.170 | INFO     | __main__:<module>:54 - Starting Excel processing...
+2025-01-31 09:25:51.234 | INFO     | __main__:<module>:56 - Excel processing complete.
+2025-01-31 09:27:18.892 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:27:19.682 | INFO     | __main__:<module>:54 - Starting Excel processing...
+2025-01-31 09:27:19.744 | INFO     | __main__:<module>:56 - Excel processing complete.
+2025-01-31 09:30:36.083 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:30:36.834 | INFO     | __main__:<module>:56 - Starting Excel processing...
+2025-01-31 09:30:36.906 | ERROR    | __main__:get_coffee_data_from_excel:35 - Error reading Excel file: 'method' object is not iterable
+2025-01-31 09:30:36.907 | INFO     | __main__:<module>:58 - Excel processing complete.
+2025-01-31 09:30:50.943 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:30:51.682 | INFO     | __main__:<module>:56 - Starting Excel processing...
+2025-01-31 09:30:51.754 | INFO     | __main__:<module>:58 - Excel processing complete.
+2025-01-31 09:41:14.896 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:41:15.639 | INFO     | __main__:<module>:57 - Starting Excel processing...
+2025-01-31 09:41:15.706 | INFO     | __main__:process_excel_file:51 - Processed Excel file: data\AnnualFoodImports.xlsx, Results saved to: data_processed\Coffee_imports_results.txt
+2025-01-31 09:41:15.706 | INFO     | __main__:<module>:59 - Excel processing complete.

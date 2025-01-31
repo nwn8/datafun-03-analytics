@@ -1,0 +1,5 @@
+2023 Coffee imports millions of dollars Statistics:
+Minimum: 344.10
+Maximum: 1643.90
+Mean: 846.33
+Standard Deviation: 561.74
