@@ -44,7 +44,7 @@ def analyze_obesity_data(file_path: pathlib.Path) -> dict:
         return {}
 
 def process_csv_file():
-    """Read a CSV file, analyze Ladder score, and save the results."""
+    """This will write the stats to data_processed/obesity_stats.txt"""
     input_file = pathlib.Path(fetched_folder_name, "Obesity.csv")
     output_file = pathlib.Path(processed_folder_name, "obesity_stats.txt")
     
@@ -52,7 +52,7 @@ def process_csv_file():
     output_file.parent.mkdir(parents=True, exist_ok=True)
     
     with output_file.open('w') as file:
-        file.write("Ladder Score Statistics:\n")
+        file.write("Obesity Statistics:\n")
         file.write(f"Minimum: {stats['min']:.2f}\n")
         file.write(f"Maximum: {stats['max']:.2f}\n")
         file.write(f"Mean: {stats['mean']:.2f}\n")

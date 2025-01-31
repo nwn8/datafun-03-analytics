@@ -1,4 +1,4 @@
-Ladder Score Statistics:
+Obesity Statistics:
 Minimum: 20.20
 Maximum: 36.20
 Mean: 29.29

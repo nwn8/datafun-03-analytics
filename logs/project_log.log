@@ -181,3 +181,7 @@
 2025-01-31 09:41:15.639 | INFO     | __main__:<module>:57 - Starting Excel processing...
 2025-01-31 09:41:15.706 | INFO     | __main__:process_excel_file:51 - Processed Excel file: data\AnnualFoodImports.xlsx, Results saved to: data_processed\Coffee_imports_results.txt
 2025-01-31 09:41:15.706 | INFO     | __main__:<module>:59 - Excel processing complete.
+2025-01-31 09:53:10.158 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 09:53:10.158 | INFO     | __main__:<module>:66 - Starting CSV processing...
+2025-01-31 09:53:10.160 | INFO     | __main__:process_csv_file:61 - Processed CSV file: data\Obesity.csv, Statistics saved to: data_processed\obesity_stats.txt
+2025-01-31 09:53:10.160 | INFO     | __main__:<module>:68 - CSV processing complete.
