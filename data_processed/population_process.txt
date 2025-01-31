@@ -1,0 +1,5 @@
+Population Statistics:
+Minimum: 311536594.00
+Maximum: 331097593.00
+Mean: 321671447.50
+Standard Deviation: 6540857.58

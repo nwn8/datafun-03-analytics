@@ -8,39 +8,61 @@ Process a JSON file to count
 import pathlib
 import json
 from utils_logger import logger
+import statistics
 
 fetched_folder_name: str = "data"
 processed_folder_name: str = "data_processed"
 
 
-def count_astronauts_by_craft(file_path: pathlib.Path) -> dict:
-    """Count the number of astronauts on each spacecraft from a JSON file."""
+def get_populations(file_path: pathlib.Path) -> dict:
+    """this will read from the data/population.json and return a list of populations"""
     try:
         with file_path.open('r') as file:
-            # Use the json module load() function 
-            # to read data file into a Python dictionary
             pop_dictionary = json.load(file)  
-            # initialize an empty dictionary to store the counts
-            craft_counts_dictionary = {}
-            # people is a list of dictionaries in the JSON file
-            pop_list: list = pop_dictionary.get("population", [])
+            pop_dictionary_result = []
+            pop_list: list = pop_dictionary.get("data", [])
+         
+            for each in pop_list:  
+          
+                number = each.get("Population")
+                pop_dictionary_result.append(number)
+
+            return pop_dictionary_result
            
     except Exception as e:
         logger.error(f"Error reading or processing JSON file: {e}")
         return {}
+    
+
+def calculate_statistics(info: list) -> dict:
+      stats = {
+            "min": min(info),
+            "max": max(info),
+            "mean": statistics.mean(info),
+            "stdev": statistics.stdev(info) if len(info) > 1 else 0,
+        }
+      return stats
 
 def process_json_file():
-    """Read a JSON file, count astronauts by spacecraft, and save the result."""
+    """this will take the data and write it to a file in data_processed/population_process.txt"""
+
     input_file: pathlib.Path = pathlib.Path(fetched_folder_name, "population.json")
     output_file: pathlib.Path = pathlib.Path(processed_folder_name, "population_process.txt")
     
-    craft_counts = count_astronauts_by_craft(input_file)
+    pop_info = get_populations(input_file)
     output_file.parent.mkdir(parents=True, exist_ok=True)
-    
+
+
+    stats = calculate_statistics(pop_info)
+
+
+
     with output_file.open('w') as file:
-        file.write("Astronauts by spacecraft:\n")
-        for craft, count in craft_counts.items():
-            file.write(f"{craft}: {count}\n")
+        file.write("Population Statistics:\n")
+        file.write(f"Minimum: {stats['min']:.2f}\n")
+        file.write(f"Maximum: {stats['max']:.2f}\n")
+        file.write(f"Mean: {stats['mean']:.2f}\n")
+        file.write(f"Standard Deviation: {stats['stdev']:.2f}\n")
     
     logger.info(f"Processed JSON file: {input_file}, Results saved to: {output_file}")
 

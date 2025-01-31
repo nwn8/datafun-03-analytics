@@ -100,3 +100,51 @@
 2025-01-30 15:15:06.161 | INFO     | __main__:<module>:36 - Starting text processing...
 2025-01-30 15:15:06.161 | INFO     | __main__:process_text_file:33 - Processed text file: data\Shakespere.txt, Word count saved to: data_processed\SAMPSON.txt
 2025-01-30 15:15:06.161 | INFO     | __main__:<module>:38 - Text processing complete.
+2025-01-31 08:06:27.281 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:06:27.281 | INFO     | __main__:<module>:49 - Starting JSON processing...
+2025-01-31 08:06:27.281 | INFO     | __main__:process_json_file:44 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:06:27.281 | INFO     | __main__:<module>:51 - JSON processing complete.
+2025-01-31 08:08:37.228 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:08:37.228 | INFO     | __main__:<module>:49 - Starting JSON processing...
+2025-01-31 08:08:37.228 | INFO     | __main__:process_json_file:44 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:08:37.228 | INFO     | __main__:<module>:51 - JSON processing complete.
+2025-01-31 08:09:47.483 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:09:47.484 | INFO     | __main__:<module>:49 - Starting JSON processing...
+2025-01-31 08:09:47.485 | INFO     | __main__:process_json_file:44 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:09:47.485 | INFO     | __main__:<module>:51 - JSON processing complete.
+2025-01-31 08:13:25.100 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:13:25.100 | INFO     | __main__:<module>:54 - Starting JSON processing...
+2025-01-31 08:13:25.100 | INFO     | __main__:process_json_file:49 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:13:25.100 | INFO     | __main__:<module>:56 - JSON processing complete.
+2025-01-31 08:19:13.124 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:19:13.124 | INFO     | __main__:<module>:49 - Starting JSON processing...
+2025-01-31 08:19:13.124 | INFO     | __main__:process_json_file:44 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:19:13.124 | INFO     | __main__:<module>:51 - JSON processing complete.
+2025-01-31 08:19:33.448 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:19:33.448 | INFO     | __main__:<module>:50 - Starting JSON processing...
+2025-01-31 08:19:33.448 | INFO     | __main__:process_json_file:45 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:19:33.448 | INFO     | __main__:<module>:52 - JSON processing complete.
+2025-01-31 08:21:17.024 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:21:17.024 | INFO     | __main__:<module>:50 - Starting JSON processing...
+2025-01-31 08:21:17.025 | INFO     | __main__:process_json_file:45 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:21:17.025 | INFO     | __main__:<module>:52 - JSON processing complete.
+2025-01-31 08:21:50.089 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:21:50.089 | INFO     | __main__:<module>:50 - Starting JSON processing...
+2025-01-31 08:21:50.089 | INFO     | __main__:process_json_file:45 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:21:50.089 | INFO     | __main__:<module>:52 - JSON processing complete.
+2025-01-31 08:22:10.365 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:22:10.366 | INFO     | __main__:<module>:50 - Starting JSON processing...
+2025-01-31 08:22:10.367 | INFO     | __main__:process_json_file:45 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:22:10.367 | INFO     | __main__:<module>:52 - JSON processing complete.
+2025-01-31 08:23:24.688 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:23:24.688 | INFO     | __main__:<module>:50 - Starting JSON processing...
+2025-01-31 08:23:24.688 | INFO     | __main__:process_json_file:45 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:23:24.688 | INFO     | __main__:<module>:52 - JSON processing complete.
+2025-01-31 08:27:43.545 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:27:43.545 | INFO     | __main__:<module>:65 - Starting JSON processing...
+2025-01-31 08:27:43.551 | INFO     | __main__:process_json_file:60 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:27:43.551 | INFO     | __main__:<module>:67 - JSON processing complete.
+2025-01-31 08:29:25.737 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 08:29:25.752 | INFO     | __main__:<module>:71 - Starting JSON processing...
+2025-01-31 08:29:25.752 | INFO     | __main__:process_json_file:66 - Processed JSON file: data\population.json, Results saved to: data_processed\population_process.txt
+2025-01-31 08:29:25.752 | INFO     | __main__:<module>:73 - JSON processing complete.
