@@ -16,7 +16,7 @@ processed_folder_name: str = "data_processed"
 
 
 def analyze_obesity_data(file_path: pathlib.Path) -> dict:
-    """Analyze the Ladder score column to calculate min, max, mean, and stdev."""
+    """Analyze the obesity data to calculate min, max, mean, and stdev."""
     try:
         # initialize an empty list to store the scores
         score_list = []
