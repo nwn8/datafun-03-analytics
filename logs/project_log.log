@@ -185,3 +185,11 @@
 2025-01-31 09:53:10.158 | INFO     | __main__:<module>:66 - Starting CSV processing...
 2025-01-31 09:53:10.160 | INFO     | __main__:process_csv_file:61 - Processed CSV file: data\Obesity.csv, Statistics saved to: data_processed\obesity_stats.txt
 2025-01-31 09:53:10.160 | INFO     | __main__:<module>:68 - CSV processing complete.
+2025-01-31 10:02:40.165 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 10:02:40.165 | INFO     | __main__:<module>:84 - Starting JSON processing...
+2025-01-31 10:02:40.180 | INFO     | __main__:process_json_file:77 - Processed JSON file: example_data\astros.json, Results saved to: example_processed\json_astronauts_by_craft.txt
+2025-01-31 10:02:40.180 | INFO     | __main__:<module>:86 - JSON processing complete.
+2025-01-31 10:02:52.310 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 10:02:52.310 | INFO     | __main__:<module>:52 - Starting text processing...
+2025-01-31 10:02:52.310 | INFO     | __main__:process_text_file:45 - Processed text file: example_data\romeo.txt, Word count saved to: example_processed\text_romeo_word_count.txt
+2025-01-31 10:02:52.310 | INFO     | __main__:<module>:54 - Text processing complete.
